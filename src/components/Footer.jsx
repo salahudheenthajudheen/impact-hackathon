@@ -50,8 +50,8 @@ function Footer() {
                 <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-800 to-transparent mb-12"></div>
 
                 {/* Large Text Logo */}
-                <div className="relative w-full mb-12 select-none overflow-hidden flex flex-col items-end">
-                    <h1 className="text-[12vw] xl:text-[14vw] leading-[0.8] font-bold tracking-tighter text-right">
+                <div className="relative w-full mb-12 select-none overflow-hidden flex flex-col items-start">
+                    <h1 className="text-[12vw] xl:text-[14vw] leading-[0.8] font-bold tracking-tighter text-left">
                         <span className="block text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-500">IMPACT</span>
                         <span className="block text-transparent" style={{ WebkitTextStroke: '1px rgba(255, 255, 255, 0.15)' }}>HACKATHON</span>
                     </h1>
