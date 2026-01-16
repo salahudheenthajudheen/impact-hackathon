@@ -5,6 +5,7 @@ function Header() {
     const isDay1 = location.pathname === '/day1';
     const isDay2 = location.pathname === '/day2';
     const isHome = location.pathname === '/';
+    const isSchedule = location.pathname === '/schedule';
 
     return (
         <div className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 pointer-events-none">
@@ -22,8 +23,8 @@ function Header() {
                     <Link
                         to="/"
                         className={`flex items-center gap-2 px-3 py-2 transition-colors rounded-full ${isHome
-                                ? 'text-white bg-white/10 border border-white/10'
-                                : 'hover:text-white hover:bg-white/5'
+                            ? 'text-white bg-white/10 border border-white/10'
+                            : 'hover:text-white hover:bg-white/5'
                             }`}
                     >
                         <span className="material-symbols-outlined text-[16px]">home</span>
@@ -32,8 +33,8 @@ function Header() {
                     <Link
                         to="/day1"
                         className={`flex items-center gap-2 px-3 py-2 transition-colors rounded-full ${isDay1
-                                ? 'text-white bg-white/10 border border-teal-500/30'
-                                : 'hover:text-white hover:bg-white/5'
+                            ? 'text-white bg-white/10 border border-teal-500/30'
+                            : 'hover:text-white hover:bg-white/5'
                             }`}
                     >
                         {isDay1 && (
@@ -48,8 +49,8 @@ function Header() {
                     <Link
                         to="/day2"
                         className={`flex items-center gap-2 px-3 py-2 transition-colors rounded-full ${isDay2
-                                ? 'text-white bg-white/10 border border-fuchsia-500/30'
-                                : 'hover:text-white hover:bg-white/5'
+                            ? 'text-white bg-white/10 border border-fuchsia-500/30'
+                            : 'hover:text-white hover:bg-white/5'
                             }`}
                     >
                         {isDay2 && (
@@ -60,6 +61,22 @@ function Header() {
                         )}
                         <span className={`material-symbols-outlined text-[16px] ${isDay2 ? 'text-fuchsia-500' : ''}`}>psychology</span>
                         Day 2
+                    </Link>
+                    <Link
+                        to="/schedule"
+                        className={`flex items-center gap-2 px-3 py-2 transition-colors rounded-full ${isSchedule
+                            ? 'text-white bg-white/10 border border-primary/30'
+                            : 'hover:text-white hover:bg-white/5'
+                            }`}
+                    >
+                        {isSchedule && (
+                            <span className="relative flex h-2 w-2">
+                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                                <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                            </span>
+                        )}
+                        <span className={`material-symbols-outlined text-[16px] ${isSchedule ? 'text-primary' : ''}`}>schedule</span>
+                        Schedule
                     </Link>
                 </div>
 
