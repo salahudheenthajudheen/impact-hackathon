@@ -26,7 +26,7 @@ function Hero() {
                         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mt-2">
                             <div className="flex items-center gap-2 text-gray-400">
                                 <span className="material-symbols-outlined text-primary">calendar_month</span>
-                                <span className="font-mono">JAN 24 & 25</span>
+                                <span className="font-mono">JAN 24 & 25, 2026</span>
                             </div>
                             <div className="hidden sm:block w-px h-4 bg-gray-600"></div>
                             <div className="flex items-center gap-2 text-gray-400">
