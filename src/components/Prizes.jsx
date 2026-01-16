@@ -63,9 +63,7 @@ function Prizes() {
                                 Direct Entry to State Finals
                             </li>
                         </ul>
-                        <button className="mt-8 w-full py-3 rounded-lg bg-primary hover:bg-primary-dark text-background-dark font-bold transition-colors">
-                            Aim for Gold
-                        </button>
+
                     </div>
 
                     {/* 3rd Place (Right) */}
