@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function Themes() {
     return (
         <section className="w-full bg-background-dark py-24 px-4 md:px-8 relative overflow-hidden" id="themes">
@@ -14,7 +16,7 @@ function Themes() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
                     {/* Day 01 Card */}
-                    <div className="group relative flex flex-col h-full mt-0 md:mt-0">
+                    <Link to="/day1" className="group relative flex flex-col h-full mt-0 md:mt-0">
                         <div className="absolute -inset-0.5 bg-gradient-to-b from-secondary-green to-transparent opacity-20 rounded-2xl blur group-hover:opacity-40 transition duration-500"></div>
                         <div className="relative flex flex-col h-full bg-[#17201d] border border-secondary-green/30 hover:border-secondary-green/60 rounded-xl p-8 transition-colors duration-300">
                             <div className="flex justify-between items-start mb-8">
@@ -41,11 +43,15 @@ function Themes() {
                                     <span>Service Delivery</span>
                                 </div>
                             </div>
+                            <div className="mt-6 pt-6 border-t border-secondary-green/20 flex items-center justify-between">
+                                <span className="text-secondary-green text-sm font-medium">Explore Day 1</span>
+                                <span className="material-symbols-outlined text-secondary-green group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                            </div>
                         </div>
-                    </div>
+                    </Link>
 
                     {/* Day 02 Card (Staggered down on desktop) */}
-                    <div className="group relative flex flex-col h-full mt-0 md:mt-24">
+                    <Link to="/day2" className="group relative flex flex-col h-full mt-0 md:mt-24">
                         <div className="absolute -inset-0.5 bg-gradient-to-b from-secondary-magenta to-transparent opacity-20 rounded-2xl blur group-hover:opacity-40 transition duration-500"></div>
                         <div className="relative flex flex-col h-full bg-[#1e1a24] border border-secondary-magenta/30 hover:border-secondary-magenta/60 rounded-xl p-8 transition-colors duration-300">
                             <div className="flex justify-between items-start mb-8">
@@ -72,8 +78,12 @@ function Themes() {
                                     <span>Automation</span>
                                 </div>
                             </div>
+                            <div className="mt-6 pt-6 border-t border-secondary-magenta/20 flex items-center justify-between">
+                                <span className="text-secondary-magenta text-sm font-medium">Explore Day 2</span>
+                                <span className="material-symbols-outlined text-secondary-magenta group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                            </div>
                         </div>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </section>
