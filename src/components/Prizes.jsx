@@ -97,7 +97,7 @@ function Prizes() {
                     <span className="text-gray-500 text-xs font-bold tracking-[0.2em] uppercase mb-8 block">Powered By</span>
                     <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24">
                         <img src="/kdisc_logo.png" alt="K-DISC" className="h-20 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
-                        <img src="/partner_logo_2.png" alt="MuLearn CEK" className="h-20 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                        <img src="/partner_logo_2.png" alt="MuLearn CEK" className="h-28 md:h-32 w-auto object-contain transition-transform duration-300 hover:scale-105" />
                     </div>
                 </div>
             </div>
