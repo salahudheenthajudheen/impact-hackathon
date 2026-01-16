@@ -39,9 +39,9 @@ function Hero() {
                                 <span>Register Now</span>
                                 <span className="material-symbols-outlined text-sm">arrow_forward</span>
                             </Link>
-                            <button className="h-12 px-8 bg-transparent border border-gray-600 hover:border-white text-white font-medium text-base rounded-lg transition-all w-full sm:w-auto">
+                            <Link to="/schedule" className="h-12 px-8 bg-transparent border border-gray-600 hover:border-white text-white font-medium text-base rounded-lg transition-all w-full sm:w-auto flex items-center justify-center">
                                 View Schedule
-                            </button>
+                            </Link>
                         </div>
                     </div>
 
