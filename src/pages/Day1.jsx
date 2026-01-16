@@ -159,9 +159,7 @@ function Day1() {
                         <Link to="/register" className="inline-block bg-teal-500 hover:bg-green-500 text-black text-lg font-bold py-5 px-12 rounded-2xl transition-all shadow-[0_0_25px_rgba(20,184,166,0.4)]">
                             Join Day 1 Hackathon
                         </Link>
-                        <button className="bg-transparent border-2 border-teal-500/30 hover:border-teal-500 text-white text-lg font-bold py-5 px-12 rounded-2xl transition-all">
-                            Inquire for Teams
-                        </button>
+
                     </div>
                     <p className="mt-8 text-[11px] text-teal-500/60 font-mono tracking-widest uppercase">System status: Applications Open • Kottarakkara Chapter</p>
                 </div>

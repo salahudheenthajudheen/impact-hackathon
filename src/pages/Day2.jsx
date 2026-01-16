@@ -161,9 +161,7 @@ function Day2() {
                         <Link to="/register" className="inline-block bg-primary hover:bg-cyan-300 text-background-dark text-lg font-bold py-4 px-10 rounded-xl transition-all shadow-[0_0_20px_rgba(0,210,230,0.3)] hover:shadow-[0_0_30px_rgba(0,210,230,0.6)]">
                             Register for Day 2
                         </Link>
-                        <button className="bg-transparent border border-white/20 hover:border-fuchsia-500 hover:text-fuchsia-500 text-white text-lg font-bold py-4 px-10 rounded-xl transition-all">
-                            Join Discord Server
-                        </button>
+
                     </div>
                     <p className="mt-6 text-xs text-gray-500 font-mono">REGISTRATION CLOSES IN: 04D : 12H : 45M</p>
                 </div>
