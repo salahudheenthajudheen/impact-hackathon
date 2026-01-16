@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import ChallengeCard from '../components/ChallengeCard';
 import ChallengeModal from '../components/ChallengeModal';
 
@@ -243,39 +244,7 @@ function Day1() {
             </section>
 
             {/* Footer */}
-            <footer className="border-t border-white/10 bg-black/80 py-16 px-6 relative z-10">
-                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-16">
-                    <div className="col-span-1 md:col-span-2">
-                        <div className="flex items-center gap-3 mb-6">
-                            <div className="w-8 h-8 rounded bg-teal-500/20 border border-teal-500/30 flex items-center justify-center">
-                                <span className="material-symbols-outlined text-teal-500 text-sm">hub</span>
-                            </div>
-                            <span className="text-lg font-bold tracking-tight">IMPACT <span className="text-teal-500">HACK</span> SERIES</span>
-                        </div>
-                        <p className="text-gray-400 max-w-md text-sm mb-8 leading-relaxed">
-                            Building the future of Kottarakkara through sustainable innovation and local empowerment. A "Work Near Home" initiative.
-                        </p>
-                    </div>
-                    <div>
-                        <h4 className="text-white font-bold mb-6 text-sm uppercase tracking-widest">Chapters</h4>
-                        <ul className="space-y-3 text-sm text-gray-400">
-                            <li><Link className="text-teal-500 font-bold" to="/day1">Day 1: LSG Innovation</Link></li>
-                            <li><Link className="hover:text-primary transition" to="/day2">Day 2: AI & Data</Link></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 className="text-white font-bold mb-6 text-sm uppercase tracking-widest">Navigation</h4>
-                        <ul className="space-y-3 text-sm text-gray-400">
-                            <li><Link className="hover:text-teal-500 transition" to="/">Home</Link></li>
-                            <li><a className="hover:text-teal-500 transition" href="#">Mentors List</a></li>
-                            <li><a className="hover:text-teal-500 transition" href="#">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/5 text-center text-[10px] text-gray-600 font-mono tracking-[0.2em] uppercase">
-                    © 2024 Impact Hackathon Series • Kottarakkara Municipality • All Rights Reserved
-                </div>
-            </footer>
+            <Footer />
 
             {/* Modal */}
             <ChallengeModal

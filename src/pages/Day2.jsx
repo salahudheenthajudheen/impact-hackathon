@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import ChallengeCard from '../components/ChallengeCard';
 import ChallengeModal from '../components/ChallengeModal';
 
@@ -239,41 +240,7 @@ function Day2() {
             </section>
 
             {/* Footer */}
-            <footer className="border-t border-white/10 bg-black/40 py-12 px-6 relative z-10">
-                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
-                    <div className="col-span-1 md:col-span-2">
-                        <h3 className="text-xl font-bold mb-4">Impact Hackathon Series</h3>
-                        <p className="text-gray-400 max-w-md text-sm mb-6">
-                            Empowering local innovators to solve global challenges through technology.
-                            A collaborative initiative for the future of Kottarakkara.
-                        </p>
-                        <div className="flex gap-4">
-                            <a className="text-gray-400 hover:text-primary transition" href="#"><span className="material-symbols-outlined">public</span></a>
-                            <a className="text-gray-400 hover:text-primary transition" href="#"><span className="material-symbols-outlined">alternate_email</span></a>
-                            <a className="text-gray-400 hover:text-primary transition" href="#"><span className="material-symbols-outlined">rss_feed</span></a>
-                        </div>
-                    </div>
-                    <div>
-                        <h4 className="text-white font-bold mb-4">Events</h4>
-                        <ul className="space-y-2 text-sm text-gray-400">
-                            <li><Link className="hover:text-primary transition" to="/day1">Day 1: Green Tech</Link></li>
-                            <li><Link className="text-fuchsia-500 font-medium" to="/day2">Day 2: AI & Data</Link></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 className="text-white font-bold mb-4">Resources</h4>
-                        <ul className="space-y-2 text-sm text-gray-400">
-                            <li><a className="hover:text-primary transition" href="#">Kerala AI Mission</a></li>
-                            <li><a className="hover:text-primary transition" href="#">Work Near Home</a></li>
-                            <li><a className="hover:text-primary transition" href="#">API Documentation</a></li>
-                            <li><a className="hover:text-primary transition" href="#">Code of Conduct</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/5 text-center text-xs text-gray-600 font-mono">
-                    © 2024 Impact Hackathon Series. All systems nominal.
-                </div>
-            </footer>
+            <Footer />
 
             {/* Modal */}
             <ChallengeModal
