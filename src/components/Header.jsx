@@ -15,7 +15,7 @@ function Header() {
                     <div className="relative flex items-center justify-center w-8 h-8 rounded-lg bg-primary/20 border border-primary/30">
                         <span className="material-symbols-outlined text-primary text-sm">bolt</span>
                     </div>
-                    <span className="text-sm font-bold tracking-tight text-white/90">IMPACT <span className="text-primary">HACK</span></span>
+                    <span className="text-sm font-bold tracking-tight text-white/90">IMPACT <span className="text-primary">HACKATHON</span></span>
                 </Link>
 
                 {/* Navigation Links */}
