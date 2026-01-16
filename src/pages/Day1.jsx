@@ -146,83 +146,7 @@ function Day1() {
                 </div>
             </section>
 
-            {/* Scoring Section */}
-            <section className="py-24 px-6 relative">
-                <div className="max-w-5xl mx-auto">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl font-display font-bold mb-4">Submission Framework</h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto">Evaluated through the lens of local impact, accessibility, and sustainable implementation.</p>
-                    </div>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-                        <div className="space-y-6">
-                            <div className="flex items-start gap-5 p-6 rounded-2xl bg-white/[0.03] backdrop-blur-xl border border-white/10">
-                                <div className="w-12 h-12 rounded-xl bg-teal-500/10 flex items-center justify-center shrink-0">
-                                    <span className="material-symbols-outlined text-teal-500">integration_instructions</span>
-                                </div>
-                                <div>
-                                    <h4 className="font-bold text-white text-lg">Integrated Solution</h4>
-                                    <p className="text-sm text-gray-400 mt-2 leading-relaxed">A deployable digital tool that interacts with existing LSG data structures or provides a clear migration path.</p>
-                                </div>
-                            </div>
-                            <div className="flex items-start gap-5 p-6 rounded-2xl bg-white/[0.03] backdrop-blur-xl border border-white/10">
-                                <div className="w-12 h-12 rounded-xl bg-teal-500/10 flex items-center justify-center shrink-0">
-                                    <span className="material-symbols-outlined text-teal-500">universal_currency</span>
-                                </div>
-                                <div>
-                                    <h4 className="font-bold text-white text-lg">Accessibility Report</h4>
-                                    <p className="text-sm text-gray-400 mt-2 leading-relaxed">Demonstration of how the solution caters to diverse literacy levels and regional language speakers.</p>
-                                </div>
-                            </div>
-                            <div className="flex items-start gap-5 p-6 rounded-2xl bg-white/[0.03] backdrop-blur-xl border border-white/10">
-                                <div className="w-12 h-12 rounded-xl bg-teal-500/10 flex items-center justify-center shrink-0">
-                                    <span className="material-symbols-outlined text-teal-500">eco</span>
-                                </div>
-                                <div>
-                                    <h4 className="font-bold text-white text-lg">Sustainability Roadmap</h4>
-                                    <p className="text-sm text-gray-400 mt-2 leading-relaxed">A plan on how the project can be maintained by local community leaders or municipality tech teams.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="p-10 rounded-3xl bg-white/[0.03] backdrop-blur-xl border border-teal-500/20 flex flex-col justify-center bg-gradient-to-br from-teal-500/5 to-transparent">
-                            <h3 className="text-xl font-bold mb-8 text-center uppercase tracking-widest text-teal-500">Scoring Algorithm</h3>
-                            <div className="space-y-8">
-                                <div>
-                                    <div className="flex justify-between text-sm mb-3">
-                                        <span className="text-white font-medium">Grassroots Impact</span>
-                                        <span className="text-teal-500 font-mono font-bold">45%</span>
-                                    </div>
-                                    <div className="h-2.5 bg-white/5 rounded-full overflow-hidden border border-white/5">
-                                        <div className="h-full bg-gradient-to-r from-teal-500 to-green-500 w-[45%] shadow-[0_0_15px_rgba(20,184,166,0.5)]"></div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div className="flex justify-between text-sm mb-3">
-                                        <span className="text-white font-medium">Localization & UI</span>
-                                        <span className="text-green-500 font-mono font-bold">30%</span>
-                                    </div>
-                                    <div className="h-2.5 bg-white/5 rounded-full overflow-hidden border border-white/5">
-                                        <div className="h-full bg-gradient-to-r from-green-500 to-teal-400 w-[30%] shadow-[0_0_15px_rgba(34,197,94,0.5)]"></div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div className="flex justify-between text-sm mb-3">
-                                        <span className="text-white font-medium">Technical Execution</span>
-                                        <span className="text-white/60 font-mono font-bold">25%</span>
-                                    </div>
-                                    <div className="h-2.5 bg-white/5 rounded-full overflow-hidden border border-white/5">
-                                        <div className="h-full bg-white/30 w-[25%]"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="mt-12 pt-8 border-t border-white/10 text-center">
-                                <p className="text-[10px] text-gray-500 font-mono tracking-widest uppercase">Judiciary: Local Self Government Department Experts</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
             {/* CTA Section */}
             <section className="py-32 relative overflow-hidden flex justify-center items-center">
@@ -232,9 +156,9 @@ function Day1() {
                         Registration for Day 1 is now open for students, professionals, and civic-tech enthusiasts.
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center gap-6">
-                        <button className="bg-teal-500 hover:bg-green-500 text-black text-lg font-bold py-5 px-12 rounded-2xl transition-all shadow-[0_0_25px_rgba(20,184,166,0.4)]">
+                        <Link to="/register" className="inline-block bg-teal-500 hover:bg-green-500 text-black text-lg font-bold py-5 px-12 rounded-2xl transition-all shadow-[0_0_25px_rgba(20,184,166,0.4)]">
                             Join Day 1 Hackathon
-                        </button>
+                        </Link>
                         <button className="bg-transparent border-2 border-teal-500/30 hover:border-teal-500 text-white text-lg font-bold py-5 px-12 rounded-2xl transition-all">
                             Inquire for Teams
                         </button>
