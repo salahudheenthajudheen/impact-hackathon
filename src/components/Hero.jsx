@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function Hero() {
     return (
         <section className="relative min-h-screen w-full flex flex-col justify-center items-center pt-24 pb-12 overflow-hidden" id="hero">
@@ -24,7 +26,7 @@ function Hero() {
                         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mt-2">
                             <div className="flex items-center gap-2 text-gray-400">
                                 <span className="material-symbols-outlined text-primary">calendar_month</span>
-                                <span className="font-mono">JAN 24 & 25</span>
+                                <span className="font-mono">JAN 24 & 25, 2026</span>
                             </div>
                             <div className="hidden sm:block w-px h-4 bg-gray-600"></div>
                             <div className="flex items-center gap-2 text-gray-400">
@@ -33,13 +35,13 @@ function Hero() {
                             </div>
                         </div>
                         <div className="flex flex-col sm:flex-row gap-4 mt-6 justify-center lg:justify-start w-full">
-                            <button className="h-12 px-8 bg-primary hover:bg-primary-dark text-background-dark font-bold text-base rounded-lg transition-all hover-glow flex items-center justify-center gap-2 w-full sm:w-auto">
+                            <Link to="/register" className="h-12 px-8 bg-primary hover:bg-primary-dark text-background-dark font-bold text-base rounded-lg transition-all hover-glow flex items-center justify-center gap-2 w-full sm:w-auto">
                                 <span>Register Now</span>
                                 <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                            </button>
-                            <button className="h-12 px-8 bg-transparent border border-gray-600 hover:border-white text-white font-medium text-base rounded-lg transition-all w-full sm:w-auto">
+                            </Link>
+                            <Link to="/schedule" className="h-12 px-8 bg-transparent border border-gray-600 hover:border-white text-white font-medium text-base rounded-lg transition-all w-full sm:w-auto flex items-center justify-center">
                                 View Schedule
-                            </button>
+                            </Link>
                         </div>
                     </div>
 
