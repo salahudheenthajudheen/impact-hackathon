@@ -11,7 +11,7 @@ function Prizes() {
                 {/* Podium Layout for Desktop, Stack for Mobile */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-end max-w-5xl mx-auto">
                     {/* 2nd Place (Left) */}
-                    <div className="order-2 md:order-1 flex flex-col bg-background-card border border-gray-800 rounded-2xl p-6 relative overflow-hidden group hover:border-secondary-magenta/40 transition-all duration-300 items-center text-center h-full justify-between min-h-[220px]">
+                    <div className="order-2 md:order-1 flex flex-col bg-background-card border border-gray-800 rounded-2xl p-6 relative overflow-hidden group hover:border-secondary-magenta/40 transition-all duration-300 items-center text-center h-full justify-center min-h-[220px]">
                         <div className="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-secondary-magenta to-transparent opacity-50"></div>
                         <div className="flex flex-col items-center mb-6">
                             <span className="material-symbols-outlined text-gray-600 group-hover:text-secondary-magenta transition-colors text-4xl mb-3">trophy</span>
@@ -24,7 +24,7 @@ function Prizes() {
                     </div>
 
                     {/* 1st Place (Center - Elevated) */}
-                    <div className="order-1 md:order-2 flex flex-col bg-[#1a2324] border border-primary/40 rounded-2xl p-8 relative overflow-hidden shadow-[0_0_40px_rgba(0,210,230,0.1)] scale-100 md:scale-110 md:-translate-y-4 z-10 group items-center text-center min-h-[280px] justify-between">
+                    <div className="order-1 md:order-2 flex flex-col bg-[#1a2324] border border-primary/40 rounded-2xl p-8 relative overflow-hidden shadow-[0_0_40px_rgba(0,210,230,0.1)] scale-100 md:scale-110 md:-translate-y-4 z-10 group items-center text-center min-h-[280px] justify-center">
                         <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-primary to-transparent"></div>
                         <div className="absolute -right-10 -top-10 w-32 h-32 bg-primary/10 blur-3xl rounded-full"></div>
                         <div className="flex flex-col items-center mb-6">
@@ -38,7 +38,7 @@ function Prizes() {
                     </div>
 
                     {/* 3rd Place (Right) */}
-                    <div className="order-3 md:order-3 flex flex-col bg-background-card border border-gray-800 rounded-2xl p-6 relative overflow-hidden group hover:border-secondary-green/40 transition-all duration-300 items-center text-center h-full justify-between min-h-[220px]">
+                    <div className="order-3 md:order-3 flex flex-col bg-background-card border border-gray-800 rounded-2xl p-6 relative overflow-hidden group hover:border-secondary-green/40 transition-all duration-300 items-center text-center h-full justify-center min-h-[220px]">
                         <div className="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-secondary-green to-transparent opacity-50"></div>
                         <div className="flex flex-col items-center mb-6">
                             <span className="material-symbols-outlined text-gray-600 group-hover:text-secondary-green transition-colors text-4xl mb-3">military_tech</span>
