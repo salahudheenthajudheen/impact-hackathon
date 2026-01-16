@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Header from '../components/Header';
 import ChallengeCard from '../components/ChallengeCard';
 import ChallengeModal from '../components/ChallengeModal';
 
@@ -86,47 +87,11 @@ function Day2() {
                 <div className="absolute bottom-[-100px] left-[-200px] w-[600px] h-[600px] bg-primary/10 rounded-full blur-[80px]"></div>
             </div>
 
-            {/* Navbar */}
-            <div className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 pointer-events-none">
-                <nav className="pointer-events-auto flex items-center p-1.5 pl-6 pr-1.5 gap-8 max-w-4xl w-[90%] md:w-full justify-between rounded-full bg-black/60 backdrop-blur-2xl border border-white/10 shadow-[0_0_20px_rgba(0,0,0,0.5)]">
-                    <Link to="/" className="flex items-center gap-3 shrink-0">
-                        <div className="relative flex items-center justify-center w-8 h-8 rounded-lg bg-white/5 border border-white/10">
-                            <span className="material-symbols-outlined text-primary text-sm">terminal</span>
-                            <div className="absolute inset-0 bg-primary/20 blur-sm rounded-lg animate-pulse"></div>
-                        </div>
-                        <span className="text-sm font-bold tracking-tight text-white/90">IMPACT <span className="text-primary">HACK</span></span>
-                    </Link>
-                    <div className="hidden md:flex items-center gap-1 text-xs font-medium text-gray-400">
-                        <Link to="/" className="flex items-center gap-2 px-3 py-2 hover:text-white transition-colors rounded-full hover:bg-white/5">
-                            <span className="material-symbols-outlined text-[16px]">home</span>
-                            Overview
-                        </Link>
-                        <Link to="/day1" className="flex items-center gap-2 px-3 py-2 hover:text-white transition-colors rounded-full hover:bg-white/5">
-                            <span className="material-symbols-outlined text-[16px]">eco</span>
-                            Day 1
-                        </Link>
-                        <Link to="/day2" className="flex items-center gap-2 px-3 py-2 text-white bg-white/5 rounded-full border border-white/5 shadow-[0_0_10px_rgba(255,0,255,0.15)] transition-all">
-                            <span className="relative flex h-2 w-2">
-                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-fuchsia-500 opacity-75"></span>
-                                <span className="relative inline-flex rounded-full h-2 w-2 bg-fuchsia-500"></span>
-                            </span>
-                            <span className="material-symbols-outlined text-[16px] text-fuchsia-500">psychology</span>
-                            Day 2
-                        </Link>
-                    </div>
-                    <div className="flex items-center gap-4">
-                        <button className="hidden md:flex group relative items-center gap-2 bg-gradient-to-r from-primary to-cyan-500 hover:from-cyan-400 hover:to-primary text-black text-xs font-bold py-2.5 px-5 rounded-full transition-all shadow-[0_0_20px_rgba(0,210,230,0.3)] hover:shadow-[0_0_25px_rgba(0,210,230,0.5)] overflow-hidden">
-                            <span className="relative z-10 flex items-center gap-1">
-                                Register Now
-                                <span className="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
-                            </span>
-                        </button>
-                    </div>
-                </nav>
-            </div>
+            {/* Shared Header */}
+            <Header />
 
             {/* Hero Section */}
-            <main className="relative z-10 flex-grow flex flex-col items-center justify-center pt-32 pb-16 px-6">
+            <main className="relative z-10 flex-grow flex flex-col items-center justify-center pt-48 pb-16 px-6">
                 <div className="max-w-5xl w-full text-center space-y-8">
                     <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm mx-auto mb-4">
                         <span className="material-symbols-outlined text-fuchsia-500 text-sm">hub</span>

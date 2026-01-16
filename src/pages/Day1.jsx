@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Header from '../components/Header';
 import ChallengeCard from '../components/ChallengeCard';
 import ChallengeModal from '../components/ChallengeModal';
 
@@ -86,43 +87,8 @@ function Day1() {
                 <div className="absolute bottom-[-10%] left-[-5%] w-[600px] h-[600px] bg-green-500/10 blur-[120px] rounded-full"></div>
             </div>
 
-            {/* Navbar */}
-            <div className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 pointer-events-none">
-                <nav className="pointer-events-auto flex items-center p-1.5 pl-6 pr-1.5 gap-8 max-w-4xl w-[90%] md:w-full justify-between rounded-full bg-black/60 backdrop-blur-2xl border border-teal-500/30 shadow-[0_0_20px_rgba(20,184,166,0.2)]">
-                    <Link to="/" className="flex items-center gap-3 shrink-0">
-                        <div className="relative flex items-center justify-center w-8 h-8 rounded-lg bg-teal-500/20 border border-teal-500/30">
-                            <span className="material-symbols-outlined text-teal-500 text-sm">temple_hindu</span>
-                        </div>
-                        <span className="text-sm font-bold tracking-tight text-white/90">IMPACT <span className="text-teal-500">HACK</span></span>
-                    </Link>
-                    <div className="hidden md:flex items-center gap-1 text-xs font-medium text-gray-400">
-                        <Link to="/" className="flex items-center gap-2 px-3 py-2 hover:text-white transition-colors rounded-full hover:bg-white/5">
-                            <span className="material-symbols-outlined text-[16px]">dashboard</span>
-                            Overview
-                        </Link>
-                        <Link to="/day1" className="flex items-center gap-2 px-3 py-2 text-white bg-white/10 rounded-full border border-teal-500/20 shadow-[0_0_10px_rgba(20,184,166,0.1)]">
-                            <span className="relative flex h-2 w-2">
-                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
-                                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-                            </span>
-                            <span className="material-symbols-outlined text-[16px] text-green-500">potted_plant</span>
-                            Day 1
-                        </Link>
-                        <Link to="/day2" className="flex items-center gap-2 px-3 py-2 hover:text-white transition-colors rounded-full hover:bg-white/5">
-                            <span className="material-symbols-outlined text-[16px]">memory</span>
-                            Day 2
-                        </Link>
-                    </div>
-                    <div className="flex items-center gap-4">
-                        <button className="hidden md:flex group relative items-center gap-2 bg-gradient-to-r from-teal-500 to-green-500 hover:brightness-110 text-black text-xs font-bold py-2.5 px-5 rounded-full transition-all shadow-[0_0_20px_rgba(20,184,166,0.3)] overflow-hidden">
-                            <span className="relative z-10 flex items-center gap-1">
-                                Register Now
-                                <span className="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
-                            </span>
-                        </button>
-                    </div>
-                </nav>
-            </div>
+            {/* Shared Header */}
+            <Header />
 
             {/* Hero Section */}
             <main className="relative z-10 flex-grow flex flex-col items-center justify-center pt-48 pb-16 px-6">
