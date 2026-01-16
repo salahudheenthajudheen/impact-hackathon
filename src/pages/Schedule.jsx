@@ -32,7 +32,7 @@ function SchedulePage() {
                         A day of innovation, coding, and impact in Kottarakkara. Join the movement to build near home.
                     </p>
                     <div className="flex justify-center gap-3 mt-8">
-                        <span className="px-3 py-1 rounded-full border border-primary/30 text-primary text-xs font-bold uppercase tracking-wider">Jan 25, 2025</span>
+                        <span className="px-3 py-1 rounded-full border border-primary/30 text-primary text-xs font-bold uppercase tracking-wider">Jan 24, 2026</span>
                         <span className="px-3 py-1 rounded-full border border-emerald-500/30 text-emerald-400 text-xs font-bold uppercase tracking-wider">In-Person</span>
                     </div>
                 </div>

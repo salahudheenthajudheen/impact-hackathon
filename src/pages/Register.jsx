@@ -41,7 +41,7 @@ function RegisterPage() {
                                 <div className="p-8 flex flex-col flex-grow">
                                     <div className="flex justify-between items-start mb-6">
                                         <div className="flex flex-col">
-                                            <span className="font-mono text-secondary-green text-sm mb-1 opacity-80">January 25, 2025</span>
+                                            <span className="font-mono text-secondary-green text-sm mb-1 opacity-80">January 24, 2026</span>
                                             <h2 className="text-3xl font-display font-bold text-white group-hover:text-secondary-green transition-colors">Day 01</h2>
                                         </div>
                                         <span className="border border-secondary-green/30 text-secondary-green px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-secondary-green/5">LSG Track</span>
@@ -78,7 +78,7 @@ function RegisterPage() {
                                 <div className="p-8 flex flex-col flex-grow">
                                     <div className="flex justify-between items-start mb-6">
                                         <div className="flex flex-col">
-                                            <span className="font-mono text-secondary-magenta text-sm mb-1 opacity-80">January 26, 2025</span>
+                                            <span className="font-mono text-secondary-magenta text-sm mb-1 opacity-80">January 25, 2026</span>
                                             <h2 className="text-3xl font-display font-bold text-white group-hover:text-secondary-magenta transition-colors">Day 02</h2>
                                         </div>
                                         <span className="border border-secondary-magenta/30 text-secondary-magenta px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-secondary-magenta/5">AI Track</span>
