@@ -95,9 +95,9 @@ function Prizes() {
                 {/* Powered By Section */}
                 <div className="mt-24 text-center">
                     <span className="text-gray-500 text-xs font-bold tracking-[0.2em] uppercase mb-8 block">Powered By</span>
-                    <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-80 hover:opacity-100 transition-opacity duration-300">
-                        <img src="/kdisc_logo.png" alt="K-DISC" className="h-16 md:h-20 w-auto object-contain brightness-0 invert opacity-80 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300" />
-                        <img src="/partner_logo_2.png" alt="Kerala Startup Mission" className="h-16 md:h-20 w-auto object-contain brightness-0 invert opacity-80 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300" />
+                    <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24">
+                        <img src="/kdisc_logo.png" alt="K-DISC" className="h-20 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                        <img src="/partner_logo_2.png" alt="MuLearn CEK" className="h-20 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105" />
                     </div>
                 </div>
             </div>
