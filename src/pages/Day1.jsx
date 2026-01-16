@@ -121,30 +121,7 @@ function Day1() {
                 </div>
             </main>
 
-            {/* Challenge Cards Section */}
-            <section className="py-24 px-6 relative z-10 bg-black/40">
-                <div className="max-w-6xl mx-auto">
-                    <div className="flex items-end justify-between mb-12 border-b border-teal-500/20 pb-6">
-                        <div>
-                            <h2 className="text-3xl font-display font-bold mb-2">The Challenge Matrix</h2>
-                            <p className="text-gray-400">Addressing local needs through modern technological intervention.</p>
-                        </div>
-                        <span className="material-symbols-outlined text-4xl text-teal-500/20">widgets</span>
-                    </div>
 
-                    {/* Challenge Cards Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-                        {challenges.map((challenge) => (
-                            <ChallengeCard
-                                key={challenge.id}
-                                challenge={challenge}
-                                theme="lsg"
-                                onClick={() => openModal(challenge)}
-                            />
-                        ))}
-                    </div>
-                </div>
-            </section>
 
 
 
